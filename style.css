@@ -11,18 +11,26 @@ body {
 
 /* HEADER */
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 24px 80px;
+  padding: 20px 40px;
 }
 
-.header nav a {
-  margin-left: 30px;
+.logo {
+  font-weight: 700;
+}
+
+.nav {
+  justify-self: center;
+}
+
+.nav a {
+  margin: 0 18px;
   text-decoration: none;
   color: #000;
-  font-weight: 500;
 }
+
 
 /* HERO SECTION */
 .hero {
@@ -55,7 +63,7 @@ body {
 }
 .hero-inner {
   display: flex;
-  align-items: center;
+  align-items: center;     /* ⬅ THIS fixes vertical balance */
   justify-content: space-between;
 }
 
@@ -65,14 +73,15 @@ body {
 }
 
 .hero-small {
-  font-size: 16px;
-  margin-bottom: 12px;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 .hero-title {
-  font-size: 64px;
-  font-weight: 700;
+  font-size: 56px;   /* ⬅ slightly smaller */
+  line-height: 1.1;  /* ⬅ VERY IMPORTANT */
 }
+
 
 .hero-title span {
   color: #6a5cff; /* Rahul purple */
@@ -81,9 +90,11 @@ body {
 /* RIGHT SIDE */
 .hero-right {
   text-align: right;
+  align-self: center;   /* ⬅ magic line */
 }
 
 .hero-sub {
-  font-size: 16px;
+  font-size: 15px;
   color: #555;
 }
+
