@@ -2,104 +2,83 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   background: #ffffff;
-  padding: 40px;
+  color: #000;
 }
 
-/* ================= HEADER ================= */
-
+/* HEADER */
 .header {
-  max-width: 1200px;
-  margin: 0 auto 40px;
-  display: grid;
-  grid-template-columns: auto 1fr;
+  height: 80px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .logo {
+  position: absolute;
+  left: 40px;
+  font-weight: 800;
   font-size: 22px;
-  font-weight: 700;
 }
 
 .nav {
   display: flex;
-  justify-content: center;
   gap: 40px;
 }
 
 .nav a {
   text-decoration: none;
   color: #000;
-  font-size: 14px;
+  font-weight: 500;
 }
 
-/* ================= HERO ================= */
-
+/* HERO SECTION */
 .hero {
-  position: relative;
-  max-width: 1200px;
-  margin: auto;
-  background: #f6f6f6;
-  border-radius: 56px; /* minimal smooth curve */
-  padding: 90px 80px;
-  overflow: hidden;
-}
+  margin: 40px;
+  height: 420px;
+  border-radius: 40px; /* minimal but smooth */
+  background-color: #f6f6f6;
 
-/* CONTENT */
-.hero-content {
+  /* YOUR IMAGE */
+  background-image: url("1.png");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-size: contain;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: relative;
-  z-index: 2;
+  justify-content: center;
 }
 
-.hero-left {
-  max-width: 60%;
+/* HERO CONTENT */
+.hero-content {
+  text-align: center;
+  max-width: 900px;
 }
 
 .welcome {
-  font-size: 14px;
   display: block;
-  margin-bottom: 14px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.hero-left h1 {
+.hero h1 {
   font-size: 64px;
-  font-weight: 700;
+  font-weight: 800;
+  line-height: 1.1;
 }
 
-.hero-left h1 span {
-  color: #6a5cff;
+.hero h1 span {
+  color: #6c63ff; /* Rahul color */
 }
 
-.hero-right {
-  font-size: 14px;
-  color: #444;
-  white-space: nowrap;
-}
-
-/* ================= BACKGROUND IMAGE ================= */
-
-.pattern {
-  position: absolute;
-  width: 220px;
-  z-index: 1;
-}
-
-/* TOP LEFT */
-.pattern-left {
-  top: -35px;
-  left: -35px;
-}
-
-/* BOTTOM RIGHT (SAME IMAGE FLIPPED) */
-.pattern-right {
-  bottom: -35px;
-  right: -35px;
-  transform: rotate(180deg);
+.subtitle {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #333;
 }
