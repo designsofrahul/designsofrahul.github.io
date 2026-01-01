@@ -26,17 +26,12 @@ body {
 
 /* HERO SECTION */
 .hero {
-  min-height: 85vh;
-  background-image: url("Home Page 1.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background: #f6f6f6;
+  border-radius: 28px;   /* ⬅ increase this */
+  padding: 80px 60px;
+  margin: 40px;
 }
+
 
 /* TEXT */
 .hero-small {
