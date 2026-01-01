@@ -27,8 +27,8 @@ body {
 /* HERO SECTION */
 .hero {
   background: #f6f6f6;
-  border-radius: 28px;   /* ⬅ increase this */
-  padding: 80px 60px;
+  border-radius: 32px;
+  padding: 60px 80px;     /* ⬅ reduced */
   margin: 40px;
 }
 
