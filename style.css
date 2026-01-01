@@ -6,50 +6,55 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #ffffff;
-  color: #000;
+  background: #fff;
 }
 
-/* Header (Apple-style minimal) */
+/* HEADER */
 .header {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 24px 80px;
 }
 
-.logo {
-  font-weight: 600;
-}
-
-nav a {
-  margin-left: 20px;
+.header nav a {
+  margin-left: 30px;
   text-decoration: none;
   color: #000;
-  font-size: 14px;
+  font-weight: 500;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero {
+  min-height: 85vh;
+  background-image: url("Home Page 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 120px 16px;
 }
 
+/* TEXT */
 .hero-small {
-  font-size: 48px;
-  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-.hero-script {
-  font-family: 'Pacifico', cursive;
-  font-size: 64px;
-  margin-top: 20px;
+.hero-title {
+  font-size: 72px;
+  font-weight: 800;
+}
+
+.hero-title span {
+  color: #6a4dfd; /* Rahul color */
 }
 
 .hero-sub {
-  margin-top: 24px;
-  font-size: 16px;
+  margin-top: 14px;
+  font-size: 18px;
   color: #555;
 }
